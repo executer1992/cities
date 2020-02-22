@@ -1,0 +1,20 @@
+<div class="city-card">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{ city.CityName }}</mat-card-title>
+      <mat-card-subtitle>{{ city.Nation }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="city.CityImage" alt="Photo of a Shiba Inu" />
+    <mat-card-content>
+      <p>
+        {{ city.Description }}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      {{city.Population}}
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
